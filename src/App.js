@@ -1,23 +1,20 @@
-import logo from './logo.svg';
-import './App.css';
+import React from 'react'
+import ListShapes from './components/ListShapes'
 
 function App() {
+
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
+      <header className="row center">
+        <h1 className='navTitle'> 2D Shapes </h1>
       </header>
+      <main>
+        <ListShapes/>
+      </main>
+      <footer className="row center">
+        Developer by Florencia Gonzalez
+      </footer>
+   
     </div>
   );
 }

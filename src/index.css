@@ -1,13 +1,116 @@
+html{
+  font-size: 62.5%;
+  box-sizing: border-box;
+}
 body {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
+  height:100vh;
+  font-size: 1.6rem;
+  font-family: Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  background: #373B44; 
+  background: -webkit-linear-gradient(to right, #4286f4, #373B44); 
+  background: linear-gradient(to right, #4286f4, #373B44); 
+    
+
+}
+#root{
+  height: 100%;
+}
+.App{
+  display: grid;
+  grid-template-areas: 'header' 'main' 'footer';
+  grid-template-columns: 1fr;
+  grid-template-rows: 7rem 1fr 5rem;
+  height: 100%;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+header{
+  grid-area: header;
+  background-color: #203040;
+  align-items: center;
+  
+}
+main{
+  grid-area: main;
+  padding: 1rem;
+
+}
+footer{
+  grid-area: footer;
+  background-color: #203040;
+  color: #f8f8f8;
+}
+/*All*/
+h1{
+  font-size: 3rem;
+}
+h2{
+  font-size:1.5rem;
+  /* padding:0.3rem 0 */
+}
+.h5{
+  font-size: 1rem;
+  padding-bottom: 0.5rem;
+  align-items: center;
+  justify-content: center;
+}
+.label{
+  font-size: 1.5rem;
+}
+.navTitle{
+  color:  #f8f8f8;
+  padding: 25px;
+}
+
+.row{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+}
+.row.center{
+  justify-content: center;
+}
+img{
+  border-radius:0.5rem;
+}
+img.medium{
+  max-width: 20rem;
+  width: 100%;
+}
+.lines{
+  font-size: 1rem;
+}
+/*Card*/
+.card{
+  border: 0.1rem #c0c0c0 solid;
+  background-color: #f8f8f8;
+  border-radius: 0.5rem;
+  margin:1rem;
+  align-items: center;
+  font-size: 15px;
+}
+.card.hover:hover{
+  -webkit-transform:scale(1.2);
+  -moz-transform:scale(1.2);
+  -ms-transform:scale(1.2);
+  -o-transform:scale(1.2);
+  transform:scale(1.2);
+  cursor: pointer;
+}
+.card-body{
+  padding: 1rem;
+}
+.card.select{
+  padding-left: 10px;
+  padding: 20px;
+}
+.labelcheck{
+  padding: 5px;
+}
+
+.buttons{
+ padding: 10px;
 }
